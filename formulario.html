@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title></title>
+    </head>
+    <body>
+        <form action="axente_rexistro.php" enctype="multipart/form-data" method="post">
+            <p>Nome completo: <input type="text" name="nomeCompleto"/></p>
+            <p>Nome de usuario: <input type="text" name="nomeUsr"/></p>
+            <p>Contrasinal<input type="password" name="contrasinal"/>*Ten que ter mínimo 6 caracteres</p>
+            <p>Idade: <input type="text" name="idade"/></p>
+            <p>Data de nacemento: <input type="text" name="dNac"/></p>
+            <p>Email: <input type="text" name="email"/></p>
+            <p>URL da páxina persoal: <input type="text" name="url"/></p>
+            <p>IP do equipo: <input type="text" name="ip"/></p>
+            <p>Descrición dos hobbies: <textarea rows="4" cols="20" name="hobbies"></textarea></p>
+            <p>Recibir información: <input type="checkbox" name="rcbInfo"/></p>
+            <p>Home <input type="radio" name="sexo" value="home"/>
+             Muller <input type="radio" name="sexo" value="muller"/></p>
+            <p>Linguas estranxeiras: <select name="LinguasEs[]" size="5" multiple="multiple">
+                <option selected="selected">Inglés</option>
+                <option>Portugués</option>
+                <option>Francés</option>
+                <option>Italiano</option>
+                <option>Alemán</option>
+            </select></p>
+            <p>Currículo: <input type="file" name="curriculo"/></p>
+            <p><input type="submit" value="Submit"/></p>
+        </form>
+    </body>
+</html>
