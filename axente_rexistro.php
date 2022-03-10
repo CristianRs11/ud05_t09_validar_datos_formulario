@@ -27,7 +27,7 @@
     if ($idade == "")
         print "<p>O campo idade está baleiro.</p>";
     else
-        if ($idade < 0 or $idade > 130)
+        if ($idade < 0 or $idade > 130 && filter_var(FILTER_VALIDATE_INT))
             print "<p>O campo idade deberá conter un enteiro entre 0 e 130.<p>";
         else
             print "<p>O valor recibido do campo idade é: $idade</p>";
